@@ -13,20 +13,26 @@
         .margin {
             margin: 50px;
         }
+
+        div {
+            width: 100px
+        }
     </style>
 </head>
 
 <body>
 
-    <h1 class="display-1 bg-primary text-light">Título h1</h1>
-    <h2 class="display-2">Título h2</h2>
-    <h3 class="display-3">Título h3</h3>
-    <h4 class="display-4">Título h4</h4>
-    <h5>Título h5</h5>
-    <h6>Título h6</h6>
+    <div class="bg-info p-1 m-1">Div</div>
+    <!--padding vai do 1 ao 5-->
 
-    <p class="h2">Um paragrafo qualquer</p>
-    <!-- a class h2 da ao p a formatação de h2 mas para os mecanismos de busca, continua como uma tag p-->
+    <div class="bg-info pt-5 m-2">Div</div>
+    <!--padding apenas de um lado, t(top), s(left), e(right)... -->
+
+    <div class="bg-info py-5 m-3">Div</div>
+    <!--py ou px da padding apenas nos eixos x e y-->
+
+    <div class="bg-info p-3 ms-3">Div</div>
+    <!-- segue a mesma regra para as margin-->
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
