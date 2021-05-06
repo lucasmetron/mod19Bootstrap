@@ -18,64 +18,25 @@
 
 <body>
 
-    <div class="accordion" id="accordion">
-
-        <div class="card">
-            <div class="accordion-item">
-                <div class="card-header">
-                    <a href="#resp1" class="card-link text-decoration-none text-info" data-bs-toggle="collapse"
-                        data-bs-target="#resp1">
-                        Sua pergunta 1
-                    </a>
-                </div>
-                <div class="accordion-collapse collapse" id="resp1">
-                    <div class="accordion-body" data-bs-parent="#accordion">
-                        Resposta
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="card">
-            <div class="accordion-item">
-                <div class="card-header">
-                    <a href="#resp1" class="card-link text-decoration-none text-info" data-bs-toggle="collapse"
-                        data-bs-target="#resp2">
-                        Sua pergunta 2
-                    </a>
-                </div>
-                <div class="accordion-collapse collapse" id="resp2">
-                    <div class="accordion-body" data-bs-parent="#accordionEx">
-                        Resposta
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
-        <div class="card">
-            <div class="accordion-item">
-                <div class="card-header">
-                    <a href="#resp3" class="card-link text-decoration-none text-info" data-bs-toggle="collapse"
-                        data-bs-target="#resp3">
-                        Sua pergunta 3
-                    </a>
-                </div>
-                <div class="accordion-collapse collapse" id="resp3">
-                    <div class="accordion-body" data-bs-parent="#accordion">
-                        Resposta
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-
+    <div class="progress m-5" style="height: 30px;">
+        <div id="barra" class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+            style="width: 0%; height: 30px;">30%</div>
     </div>
 
+
+
+    <script>
+        let barra = document.querySelector("#barra")
+        i = 0;
+        setInterval(() => {
+            if (i <= 100) {
+                barra.style.width = i + "%";
+                barra.innerHTML = i + "%"
+                i++;
+            }
+        }, 100);
+
+    </script>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
