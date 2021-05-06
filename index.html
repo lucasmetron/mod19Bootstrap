@@ -18,93 +18,66 @@
 
 <body>
 
-    <div class="card-group">
+    <div class="accordion" id="accordion">
 
-
-
-
-        <div class="card w300 m-3">
-            <img class="card-img-top" src="./assets/2.png" alt="">
-            <div class="card-body">
-
+        <div class="card">
+            <div class="accordion-item">
                 <div class="card-header">
-                    <h4 class="card-title">
-                        Lucas
-                    </h4>
+                    <a href="#resp1" class="card-link text-decoration-none text-info" data-bs-toggle="collapse"
+                        data-bs-target="#resp1">
+                        Sua pergunta 1
+                    </a>
                 </div>
-
-                <div class="card-text">
-                    Criador do projeto Escola do Lucas e estudante de desenvolvimento web
-                </div>
-
-                <div class="card-footer">
-                    <div class="d-grid">
-                        <button class="btn btn-outline btn-warning text-light m-2 btn-auto"
-                            type="button">Conhecer</button>
+                <div class="accordion-collapse collapse" id="resp1">
+                    <div class="accordion-body" data-bs-parent="#accordion">
+                        Resposta
                     </div>
+
                 </div>
-
-
             </div>
-
 
         </div>
 
-        <div class="card w300 m-3">
-            <img class="card-img-top" src="./assets/2.png" alt="">
-            <div class="card-body">
-
+        <div class="card">
+            <div class="accordion-item">
                 <div class="card-header">
-                    <h4 class="card-title">
-                        Lucas
-                    </h4>
+                    <a href="#resp1" class="card-link text-decoration-none text-info" data-bs-toggle="collapse"
+                        data-bs-target="#resp2">
+                        Sua pergunta 2
+                    </a>
                 </div>
-
-                <div class="card-text">
-                    Criador do projeto Escola do Lucas e estudante de desenvolvimento web
-                </div>
-
-                <div class="card-footer">
-                    <div class="d-grid">
-                        <button class="btn btn-outline btn-warning text-light m-2 btn-auto"
-                            type="button">Conhecer</button>
+                <div class="accordion-collapse collapse" id="resp2">
+                    <div class="accordion-body" data-bs-parent="#accordionEx">
+                        Resposta
                     </div>
+
                 </div>
-
-
             </div>
-
 
         </div>
 
-        <div class="card w300 m-3">
-            <img class="card-img-top" src="./assets/2.png" alt="">
-            <div class="card-body">
-
+        <div class="card">
+            <div class="accordion-item">
                 <div class="card-header">
-                    <h4 class="card-title">
-                        Lucas
-                    </h4>
+                    <a href="#resp3" class="card-link text-decoration-none text-info" data-bs-toggle="collapse"
+                        data-bs-target="#resp3">
+                        Sua pergunta 3
+                    </a>
                 </div>
-
-                <div class="card-text">
-                    Criador do projeto Escola do Lucas e estudante de desenvolvimento web
-                </div>
-
-                <div class="card-footer">
-                    <div class="d-grid">
-                        <button class="btn btn-outline btn-warning text-light m-2 btn-auto"
-                            type="button">Conhecer</button>
+                <div class="accordion-collapse collapse" id="resp3">
+                    <div class="accordion-body" data-bs-parent="#accordion">
+                        Resposta
                     </div>
+
                 </div>
-
-
             </div>
-
 
         </div>
 
     </div>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
