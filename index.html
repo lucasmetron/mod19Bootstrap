@@ -10,28 +10,56 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <style>
+        img {
+            width: 100px;
+
+
+        }
+
+        .inline {
+            display: inline;
+        }
     </style>
 </head>
 
 <body>
 
-    <ul class="pagination pagination-sm justify-content-center">
-        <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-        <li class="page-item"><a class="page-link" href="#">1</a></li>
-        <li class="page-item active"> <a class="page-link" href="#">2</a></li>
-        <li class="page-item"> <a class="page-link" href="#">3</a></li>
-        <li class="page-item"> <a class="page-link" href="#">4</a></li>
-        <li class="page-item"><a class="page-link" href="#">Próxima</a></li>
+
+    <!-- <ul class="nav justify-content-center nav-justified">
+        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Preços</a></li>
+        <li class="nav-item "><a class="nav-link" href="">Sobre</a></li>
     </ul>
 
-    <ul class="breadcrumb justify-content-center">
+    <ul class="nav nav-tabs justify-content-center nav-justified">
+        <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="">Preços</a></li>
+        <li class="nav-item "><a class="nav-link" href="">Sobre</a></li>
+    </ul> -->
 
-        <li class="breadcrumb-item"><a href="#">Eletronicos</a></li>
-        <li class="breadcrumb-item active"> <a href="#">Computadores</a></li>
-        <li class="breadcrumb-item"> <a href="#">Acessorios</a></li>
-        <li class="breadcrumb-item"> <a href="#">Discos Rigidos</a></li>
-
+    <ul class="nav nav-pills nav-justified">
+        <li class="nav-item"><a href="#home" class="nav-link active" data-bs-toggle="tab">Home</a></li>
+        <li class="nav-item"><a href="#price" class="nav-link" data-bs-toggle="tab">Preços</a></li>
+        <li class="nav-item "><a href="#about" class="nav-link" data-bs-toggle="tab">Sobre</a></li>
     </ul>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane active">
+            <h1>home</h1>
+        </div>
+
+        <div id="price" class="tab-pane fade">
+            <h1>price</h1>
+        </div>
+
+        <div id="about" class="tab-pane fade">
+            <h1>about</h1>
+        </div>
+    </div>
+
+
+
+
 
 
 
