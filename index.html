@@ -10,33 +10,23 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <style>
-        .w300 {
-            width: 300px;
-        }
     </style>
 </head>
 
 <body>
 
-    <div class="progress m-5" style="height: 30px;">
-        <div id="barra" class="progress-bar bg-success progress-bar-striped progress-bar-animated"
-            style="width: 0%; height: 30px;">30%</div>
-    </div>
+    <div class="spinner-border text-warning spinner-border-sm"></div>
+    <br><br>
 
+    <div class="spinner-grow text-warning spinner-grow-sm"></div>
+    <div class="spinner-grow text-danger spinner-grow-sm"></div>
+    <div class="spinner-grow text-success spinner-grow-sm"></div>
+    <br><br>
 
-
-    <script>
-        let barra = document.querySelector("#barra")
-        i = 0;
-        setInterval(() => {
-            if (i <= 100) {
-                barra.style.width = i + "%";
-                barra.innerHTML = i + "%"
-                i++;
-            }
-        }, 100);
-
-    </script>
+    <button class="btn btn-primary">
+        Carregando
+        <div class="spinner-border text-light spinner-border-sm"></div>
+    </button>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
