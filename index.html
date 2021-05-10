@@ -18,48 +18,39 @@
 </head>
 
 <body>
+    <button class="btn btn-primary m-5" data-bs-toggle="modal" data-bs-target="#meuModal">Mostrar Modal</button>
 
-    <div class="container mt-5">
-        <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
+    <div class="container ">
 
-            <ul class="carousel-indicators">
-                <li data-bs-target="#meuCarrossel" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#meuCarrossel" data-bs-slide-to="1"></li>
-                <li data-bs-target="#meuCarrossel" data-bs-slide-to="2"></li>
-            </ul>
+        <h1 class="display-1">Titulo</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis eius debitis dolorum facere
+            officia, assumenda blanditiis voluptatem maiores unde voluptatum, corrupti quaerat ratione praesentium,
 
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div
-                        class="bg-info text-light d-flex justify-content-center align-items-center pgbr-carrossel-item">
-                        Oferta 1</div>
-
-                </div>
-
-                <div class="carousel-item">
-                    <div
-                        class="bg-warning text-light d-flex justify-content-center align-items-center pgbr-carrossel-item">
-                        Oferta 2</div>
-                </div>
-
-                <div class="carousel-item">
-                    <div
-                        class="bg-danger text-light d-flex justify-content-center align-items-center pgbr-carrossel-item">
-                        Oferta 3</div>
-                </div>
-            </div>
-
-            <a class="carousel-control-prev" href="#meuCarrossel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-
-            <a class="carousel-control-next" href="#meuCarrossel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
+        </p>
     </div>
 
+    <div class="modal fade" id="meuModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Oferta imperdível</h1>
+                </div>
 
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis officiis eius debitis dolorum
+                    facere
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-primary">Clique aqui</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
