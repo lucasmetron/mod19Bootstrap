@@ -10,44 +10,55 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
     <style>
-        img {
-            width: 100px;
-
-
-        }
-
-        .inline {
-            display: inline;
-            justify-content: space-evenly;
-        }
-
-        .center {
-            text-align: center;
+        .pgbr-carrossel-item {
+            height: 300px;
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-around">
-        <div class="navbar-brand ms-5">Logo</div>
+    <div class="container mt-5">
+        <div id="meuCarrossel" class="carousel slide" data-bs-ride="carousel">
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div id="myNav" class="collapse navbar-collapse justify-content-end me-5 mn-3-sm center">
-            <ul class=" navbar-nav">
-                <li class="nav-item me-sm-5 me-lg-3"><a href="#home" class="nav-link " data-bs-toggle="tab">Home</a>
-                </li>
-                <li class="nav-item me-sm-5 me-lg-3"><a href="#price" class="nav-link" data-bs-toggle="tab">Preços</a>
-                </li>
-                <li class="nav-item me-sm-5 me-lg-3"><a href="#about" class="nav-link" data-bs-toggle="tab">Sobre</a>
-                </li>
-                <button class="btn btn-primary m-auto ">Comprar</button>
+            <ul class="carousel-indicators">
+                <li data-bs-target="#meuCarrossel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#meuCarrossel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#meuCarrossel" data-bs-slide-to="2"></li>
             </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div
+                        class="bg-info text-light d-flex justify-content-center align-items-center pgbr-carrossel-item">
+                        Oferta 1</div>
+
+                </div>
+
+                <div class="carousel-item">
+                    <div
+                        class="bg-warning text-light d-flex justify-content-center align-items-center pgbr-carrossel-item">
+                        Oferta 2</div>
+                </div>
+
+                <div class="carousel-item">
+                    <div
+                        class="bg-danger text-light d-flex justify-content-center align-items-center pgbr-carrossel-item">
+                        Oferta 3</div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#meuCarrossel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+
+            <a class="carousel-control-next" href="#meuCarrossel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
         </div>
-    </nav>
+    </div>
+
 
 
 
