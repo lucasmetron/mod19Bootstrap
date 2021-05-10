@@ -19,7 +19,15 @@
 
 <body>
 
-    <a href="https://programadorbr.com" data-bs-toggle="tooltip" title="Melhor curso" target="_blank">Programador BR</a>
+    <a href="https://programadorbr.com" data-bs-toggle="popover" title="Melhor curso"
+        data-bs-content="O melhor do brasil" target="_blank">
+
+        Programador BR
+
+    </a>
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
@@ -28,7 +36,7 @@
 
     <script>
         $(document).ready(function () {
-            $("[data-bs-toggle='tooltip']").tooltip();
+            $("[data-bs-toggle='popover']").popover();
         })
     </script>
 </body>
